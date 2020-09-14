@@ -14,6 +14,14 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+
+  // https://mvnrepository.com/artifact/org.springframework.data/spring-data-jpa
+  compile group: 'org.springframework.data', name: 'spring-data-jpa', version: '2.3.3.RELEASE'
+
+  // https://mvnrepository.com/artifact/org.eclipse.persistence/javax.persistence
+  compile group: 'org.eclipse.persistence', name: 'javax.persistence', version: '2.2.1'
+
+
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
